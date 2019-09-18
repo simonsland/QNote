@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3428523322F0417300BA712E /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3428523222F0417300BA712E /* ShareViewController.m */; };
+		3428523622F0417300BA712E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3428523422F0417300BA712E /* MainInterface.storyboard */; };
+		3428523A22F0417300BA712E /* QNoteShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3428522F22F0417300BA712E /* QNoteShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34794BFA2328ED3C0051CDFB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34794BF92328ED3C0051CDFB /* NotificationCenter.framework */; };
+		34794BFE2328ED3C0051CDFB /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34794BFD2328ED3C0051CDFB /* TodayViewController.m */; };
+		34794C012328ED3C0051CDFB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34794BFF2328ED3C0051CDFB /* MainInterface.storyboard */; };
+		34794C052328ED3C0051CDFB /* QNoteToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34794BF72328ED3C0051CDFB /* QNoteToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34CF63C322EEE37900A918CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF63C222EEE37900A918CD /* AppDelegate.m */; };
+		34CF63C622EEE37900A918CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF63C522EEE37900A918CD /* ViewController.m */; };
+		34CF63C922EEE37900A918CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CF63C722EEE37900A918CD /* Main.storyboard */; };
+		34CF63CB22EEE37A00A918CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CF63CA22EEE37A00A918CD /* Assets.xcassets */; };
+		34CF63CE22EEE37A00A918CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CF63CC22EEE37A00A918CD /* LaunchScreen.storyboard */; };
+		34CF63D122EEE37A00A918CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF63D022EEE37A00A918CD /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3428523822F0417300BA712E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34CF63B622EEE37900A918CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3428522E22F0417300BA712E;
+			remoteInfo = QNoteShare;
+		};
+		34794C032328ED3C0051CDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34CF63B622EEE37900A918CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34794BF62328ED3C0051CDFB;
+			remoteInfo = QNoteToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3428523E22F0417300BA712E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34794C052328ED3C0051CDFB /* QNoteToday.appex in Embed App Extensions */,
+				3428523A22F0417300BA712E /* QNoteShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3428522F22F0417300BA712E /* QNoteShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QNoteShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3428523122F0417300BA712E /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		3428523222F0417300BA712E /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		3428523522F0417300BA712E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3428523722F0417300BA712E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34794BF72328ED3C0051CDFB /* QNoteToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QNoteToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		34794BF92328ED3C0051CDFB /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		34794BFC2328ED3C0051CDFB /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		34794BFD2328ED3C0051CDFB /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		34794C002328ED3C0051CDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		34794C022328ED3C0051CDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34794C092328ED7E0051CDFB /* QNoteToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QNoteToday.entitlements; sourceTree = "<group>"; };
+		348D4D8922F46C8E0068B6B6 /* QNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QNote.entitlements; sourceTree = "<group>"; };
+		348D4D8A22F46C9B0068B6B6 /* QNoteShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QNoteShare.entitlements; sourceTree = "<group>"; };
+		34CF63BE22EEE37900A918CD /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CF63C122EEE37900A918CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34CF63C222EEE37900A918CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34CF63C422EEE37900A918CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34CF63C522EEE37900A918CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34CF63C822EEE37900A918CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34CF63CA22EEE37A00A918CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34CF63CD22EEE37A00A918CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34CF63CF22EEE37A00A918CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CF63D022EEE37A00A918CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3428522C22F0417300BA712E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34794BF42328ED3C0051CDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34794BFA2328ED3C0051CDFB /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34CF63BB22EEE37900A918CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3428523022F0417300BA712E /* QNoteShare */ = {
+			isa = PBXGroup;
+			children = (
+				348D4D8A22F46C9B0068B6B6 /* QNoteShare.entitlements */,
+				3428523122F0417300BA712E /* ShareViewController.h */,
+				3428523222F0417300BA712E /* ShareViewController.m */,
+				3428523422F0417300BA712E /* MainInterface.storyboard */,
+				3428523722F0417300BA712E /* Info.plist */,
+			);
+			path = QNoteShare;
+			sourceTree = "<group>";
+		};
+		34794BF82328ED3C0051CDFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34794BF92328ED3C0051CDFB /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34794BFB2328ED3C0051CDFB /* QNoteToday */ = {
+			isa = PBXGroup;
+			children = (
+				34794C092328ED7E0051CDFB /* QNoteToday.entitlements */,
+				34794BFC2328ED3C0051CDFB /* TodayViewController.h */,
+				34794BFD2328ED3C0051CDFB /* TodayViewController.m */,
+				34794BFF2328ED3C0051CDFB /* MainInterface.storyboard */,
+				34794C022328ED3C0051CDFB /* Info.plist */,
+			);
+			path = QNoteToday;
+			sourceTree = "<group>";
+		};
+		34794C0A233114F30051CDFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34794C0B233115010051CDFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34794C0C2331150B0051CDFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34794C0D23311D910051CDFB /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		34CF63B522EEE37900A918CD = {
+			isa = PBXGroup;
+			children = (
+				34CF63C022EEE37900A918CD /* QNote */,
+				3428523022F0417300BA712E /* QNoteShare */,
+				34794BFB2328ED3C0051CDFB /* QNoteToday */,
+				34794BF82328ED3C0051CDFB /* Frameworks */,
+				34CF63BF22EEE37900A918CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34CF63BF22EEE37900A918CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34CF63BE22EEE37900A918CD /* QNote.app */,
+				3428522F22F0417300BA712E /* QNoteShare.appex */,
+				34794BF72328ED3C0051CDFB /* QNoteToday.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34CF63C022EEE37900A918CD /* QNote */ = {
+			isa = PBXGroup;
+			children = (
+				34794C0D23311D910051CDFB /* Store */,
+				34794C0C2331150B0051CDFB /* Controller */,
+				34794C0B233115010051CDFB /* View */,
+				34794C0A233114F30051CDFB /* Model */,
+				348D4D8922F46C8E0068B6B6 /* QNote.entitlements */,
+				34CF63C122EEE37900A918CD /* AppDelegate.h */,
+				34CF63C222EEE37900A918CD /* AppDelegate.m */,
+				34CF63C422EEE37900A918CD /* ViewController.h */,
+				34CF63C522EEE37900A918CD /* ViewController.m */,
+				34CF63C722EEE37900A918CD /* Main.storyboard */,
+				34CF63CA22EEE37A00A918CD /* Assets.xcassets */,
+				34CF63CC22EEE37A00A918CD /* LaunchScreen.storyboard */,
+				34CF63CF22EEE37A00A918CD /* Info.plist */,
+				34CF63D022EEE37A00A918CD /* main.m */,
+			);
+			path = QNote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3428522E22F0417300BA712E /* QNoteShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3428523B22F0417300BA712E /* Build configuration list for PBXNativeTarget "QNoteShare" */;
+			buildPhases = (
+				3428522B22F0417300BA712E /* Sources */,
+				3428522C22F0417300BA712E /* Frameworks */,
+				3428522D22F0417300BA712E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNoteShare;
+			productName = QNoteShare;
+			productReference = 3428522F22F0417300BA712E /* QNoteShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		34794BF62328ED3C0051CDFB /* QNoteToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34794C082328ED3C0051CDFB /* Build configuration list for PBXNativeTarget "QNoteToday" */;
+			buildPhases = (
+				34794BF32328ED3C0051CDFB /* Sources */,
+				34794BF42328ED3C0051CDFB /* Frameworks */,
+				34794BF52328ED3C0051CDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNoteToday;
+			productName = QNoteToday;
+			productReference = 34794BF72328ED3C0051CDFB /* QNoteToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		34CF63BD22EEE37900A918CD /* QNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CF63D422EEE37A00A918CD /* Build configuration list for PBXNativeTarget "QNote" */;
+			buildPhases = (
+				34CF63BA22EEE37900A918CD /* Sources */,
+				34CF63BB22EEE37900A918CD /* Frameworks */,
+				34CF63BC22EEE37900A918CD /* Resources */,
+				3428523E22F0417300BA712E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3428523922F0417300BA712E /* PBXTargetDependency */,
+				34794C042328ED3C0051CDFB /* PBXTargetDependency */,
+			);
+			name = QNote;
+			productName = QNote;
+			productReference = 34CF63BE22EEE37900A918CD /* QNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34CF63B622EEE37900A918CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = starccode;
+				TargetAttributes = {
+					3428522E22F0417300BA712E = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					34794BF62328ED3C0051CDFB = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					34CF63BD22EEE37900A918CD = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 34CF63B922EEE37900A918CD /* Build configuration list for PBXProject "QNote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34CF63B522EEE37900A918CD;
+			productRefGroup = 34CF63BF22EEE37900A918CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34CF63BD22EEE37900A918CD /* QNote */,
+				3428522E22F0417300BA712E /* QNoteShare */,
+				34794BF62328ED3C0051CDFB /* QNoteToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3428522D22F0417300BA712E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3428523622F0417300BA712E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34794BF52328ED3C0051CDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34794C012328ED3C0051CDFB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34CF63BC22EEE37900A918CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CF63CE22EEE37A00A918CD /* LaunchScreen.storyboard in Resources */,
+				34CF63CB22EEE37A00A918CD /* Assets.xcassets in Resources */,
+				34CF63C922EEE37900A918CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3428522B22F0417300BA712E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3428523322F0417300BA712E /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34794BF32328ED3C0051CDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34794BFE2328ED3C0051CDFB /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34CF63BA22EEE37900A918CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34CF63C622EEE37900A918CD /* ViewController.m in Sources */,
+				34CF63D122EEE37A00A918CD /* main.m in Sources */,
+				34CF63C322EEE37900A918CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3428523922F0417300BA712E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3428522E22F0417300BA712E /* QNoteShare */;
+			targetProxy = 3428523822F0417300BA712E /* PBXContainerItemProxy */;
+		};
+		34794C042328ED3C0051CDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34794BF62328ED3C0051CDFB /* QNoteToday */;
+			targetProxy = 34794C032328ED3C0051CDFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3428523422F0417300BA712E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3428523522F0417300BA712E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		34794BFF2328ED3C0051CDFB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34794C002328ED3C0051CDFB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		34CF63C722EEE37900A918CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34CF63C822EEE37900A918CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34CF63CC22EEE37A00A918CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34CF63CD22EEE37A00A918CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3428523C22F0417300BA712E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QNoteShare/QNoteShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNoteShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote.QNoteShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3428523D22F0417300BA712E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QNoteShare/QNoteShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNoteShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote.QNoteShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34794C062328ED3C0051CDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QNoteToday/QNoteToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNoteToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote.QNoteToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34794C072328ED3C0051CDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QNoteToday/QNoteToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNoteToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote.QNoteToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34CF63D222EEE37A00A918CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34CF63D322EEE37A00A918CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34CF63D522EEE37A00A918CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QNote/QNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34CF63D622EEE37A00A918CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QNote/QNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z48PGCVN4;
+				INFOPLIST_FILE = QNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starccode.QNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3428523B22F0417300BA712E /* Build configuration list for PBXNativeTarget "QNoteShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3428523C22F0417300BA712E /* Debug */,
+				3428523D22F0417300BA712E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34794C082328ED3C0051CDFB /* Build configuration list for PBXNativeTarget "QNoteToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34794C062328ED3C0051CDFB /* Debug */,
+				34794C072328ED3C0051CDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CF63B922EEE37900A918CD /* Build configuration list for PBXProject "QNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34CF63D222EEE37A00A918CD /* Debug */,
+				34CF63D322EEE37A00A918CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34CF63D422EEE37A00A918CD /* Build configuration list for PBXNativeTarget "QNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34CF63D522EEE37A00A918CD /* Debug */,
+				34CF63D622EEE37A00A918CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34CF63B622EEE37900A918CD /* Project object */;
+}
