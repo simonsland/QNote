@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
+#import <QMUIKit/QMUIKit.h>
 
-@interface ShareViewController : UIViewController
+@interface ShareViewController : QMUIModalPresentationViewController
 
 @end
