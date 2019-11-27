@@ -18,6 +18,12 @@
 		34794C052328ED3C0051CDFB /* QNoteToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34794BF72328ED3C0051CDFB /* QNoteToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		34AF12BA2384E0D300B917A7 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12B82384E0D300B917A7 /* UIImageEffects.m */; };
 		34AF12C02384E49100B917A7 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12B82384E0D300B917A7 /* UIImageEffects.m */; };
+		34AF12EB238D04A200B917A7 /* HeaderViewForShareTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12EA238D04A200B917A7 /* HeaderViewForShareTableView.m */; };
+		34AF12F0238D101500B917A7 /* LayoutCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12EF238D101500B917A7 /* LayoutCenter.m */; };
+		34AF12F1238D101500B917A7 /* LayoutCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12EF238D101500B917A7 /* LayoutCenter.m */; };
+		34AF12F2238D101500B917A7 /* LayoutCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AF12EF238D101500B917A7 /* LayoutCenter.m */; };
+		34AF12F8238D1E9800B917A7 /* Songti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 34AF12F6238D1DB600B917A7 /* Songti.ttc */; };
+		34AF12F9238D1EDF00B917A7 /* Songti.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 34AF12F6238D1DB600B917A7 /* Songti.ttc */; };
 		34CF63C322EEE37900A918CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF63C222EEE37900A918CD /* AppDelegate.m */; };
 		34CF63C622EEE37900A918CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF63C522EEE37900A918CD /* ViewController.m */; };
 		34CF63C922EEE37900A918CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CF63C722EEE37900A918CD /* Main.storyboard */; };
@@ -60,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A30F50CFCC7451247A7CC97 /* Pods-QNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.debug.xcconfig"; path = "Target Support Files/Pods-QNote/Pods-QNote.debug.xcconfig"; sourceTree = "<group>"; };
 		3408DF27235F293700D22E8E /* XHMovableCellTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHMovableCellTableView.h; sourceTree = "<group>"; };
 		3408DF28235F293700D22E8E /* XHMovableCellTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHMovableCellTableView.m; sourceTree = "<group>"; };
 		3428522F22F0417300BA712E /* QNoteShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QNoteShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +87,11 @@
 		348D4D8A22F46C9B0068B6B6 /* QNoteShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QNoteShare.entitlements; sourceTree = "<group>"; };
 		34AF12B82384E0D300B917A7 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		34AF12B92384E0D300B917A7 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		34AF12E9238D04A200B917A7 /* HeaderViewForShareTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderViewForShareTableView.h; sourceTree = "<group>"; };
+		34AF12EA238D04A200B917A7 /* HeaderViewForShareTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderViewForShareTableView.m; sourceTree = "<group>"; };
+		34AF12EE238D101500B917A7 /* LayoutCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutCenter.h; sourceTree = "<group>"; };
+		34AF12EF238D101500B917A7 /* LayoutCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutCenter.m; sourceTree = "<group>"; };
+		34AF12F6238D1DB600B917A7 /* Songti.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Songti.ttc; sourceTree = "<group>"; };
 		34CF63BE22EEE37900A918CD /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34CF63C122EEE37900A918CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34CF63C222EEE37900A918CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,8 +102,7 @@
 		34CF63CD22EEE37A00A918CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CF63CF22EEE37A00A918CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34CF63D022EEE37A00A918CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5CCA2340B4A1C846482DF808 /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
-		70264B3A76C53FFF269C082C /* Pods-QNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.debug.xcconfig"; path = "Target Support Files/Pods-QNote/Pods-QNote.debug.xcconfig"; sourceTree = "<group>"; };
+		4ABFD8B8F5478EC48A697D7F /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
 		9D5C3FF58393A9F0003373A2 /* libPods-QNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,8 +136,8 @@
 		0CD01873455F4004F71AF341 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				70264B3A76C53FFF269C082C /* Pods-QNote.debug.xcconfig */,
-				5CCA2340B4A1C846482DF808 /* Pods-QNote.release.xcconfig */,
+				0A30F50CFCC7451247A7CC97 /* Pods-QNote.debug.xcconfig */,
+				4ABFD8B8F5478EC48A697D7F /* Pods-QNote.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -143,9 +154,10 @@
 		3428523022F0417300BA712E /* QNoteShare */ = {
 			isa = PBXGroup;
 			children = (
+				34AF12FC238E7E1900B917A7 /* Model */,
+				34AF12FB238E7E0E00B917A7 /* View */,
+				34AF12FA238E7DFE00B917A7 /* Controller */,
 				348D4D8A22F46C9B0068B6B6 /* QNoteShare.entitlements */,
-				3428523122F0417300BA712E /* ShareViewController.h */,
-				3428523222F0417300BA712E /* ShareViewController.m */,
 				3428523422F0417300BA712E /* MainInterface.storyboard */,
 				3428523722F0417300BA712E /* Info.plist */,
 			);
@@ -208,6 +220,8 @@
 		34AF12B52384E09600B917A7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				34AF12F3238D176000B917A7 /* Fonts */,
+				34AF12ED238D0FDF00B917A7 /* Layout */,
 				34AF12B72384E0B100B917A7 /* Utils */,
 			);
 			path = Common;
@@ -220,6 +234,48 @@
 				34AF12B82384E0D300B917A7 /* UIImageEffects.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		34AF12ED238D0FDF00B917A7 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				34AF12EE238D101500B917A7 /* LayoutCenter.h */,
+				34AF12EF238D101500B917A7 /* LayoutCenter.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		34AF12F3238D176000B917A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				34AF12F6238D1DB600B917A7 /* Songti.ttc */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		34AF12FA238E7DFE00B917A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3428523122F0417300BA712E /* ShareViewController.h */,
+				3428523222F0417300BA712E /* ShareViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34AF12FB238E7E0E00B917A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34AF12E9238D04A200B917A7 /* HeaderViewForShareTableView.h */,
+				34AF12EA238D04A200B917A7 /* HeaderViewForShareTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34AF12FC238E7E1900B917A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		34CF63B522EEE37900A918CD = {
@@ -384,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AF12F9238D1EDF00B917A7 /* Songti.ttc in Resources */,
 				3428523622F0417300BA712E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AF12F8238D1E9800B917A7 /* Songti.ttc in Resources */,
 				34CF63CE22EEE37A00A918CD /* LaunchScreen.storyboard in Resources */,
 				34CF63CB22EEE37A00A918CD /* Assets.xcassets in Resources */,
 				34CF63C922EEE37900A918CD /* Main.storyboard in Resources */,
@@ -455,8 +513,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AF12F1238D101500B917A7 /* LayoutCenter.m in Sources */,
 				34AF12C02384E49100B917A7 /* UIImageEffects.m in Sources */,
 				3428523322F0417300BA712E /* ShareViewController.m in Sources */,
+				34AF12EB238D04A200B917A7 /* HeaderViewForShareTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AF12F2238D101500B917A7 /* LayoutCenter.m in Sources */,
 				34794BFE2328ED3C0051CDFB /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +538,7 @@
 				34AF12BA2384E0D300B917A7 /* UIImageEffects.m in Sources */,
 				34CF63C322EEE37900A918CD /* AppDelegate.m in Sources */,
 				342ADB4C233CB0DE0047AFB6 /* noteCell.m in Sources */,
+				34AF12F0238D101500B917A7 /* LayoutCenter.m in Sources */,
 				3408DF29235F293700D22E8E /* XHMovableCellTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +596,7 @@
 /* Begin XCBuildConfiguration section */
 		3428523C22F0417300BA712E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70264B3A76C53FFF269C082C /* Pods-QNote.debug.xcconfig */;
+			baseConfigurationReference = 0A30F50CFCC7451247A7CC97 /* Pods-QNote.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = QNoteShare/QNoteShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,7 +617,7 @@
 		};
 		3428523D22F0417300BA712E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CCA2340B4A1C846482DF808 /* Pods-QNote.release.xcconfig */;
+			baseConfigurationReference = 4ABFD8B8F5478EC48A697D7F /* Pods-QNote.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = QNoteShare/QNoteShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,7 +638,7 @@
 		};
 		34794C062328ED3C0051CDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70264B3A76C53FFF269C082C /* Pods-QNote.debug.xcconfig */;
+			baseConfigurationReference = 0A30F50CFCC7451247A7CC97 /* Pods-QNote.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = QNoteToday/QNoteToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -598,7 +660,7 @@
 		};
 		34794C072328ED3C0051CDFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CCA2340B4A1C846482DF808 /* Pods-QNote.release.xcconfig */;
+			baseConfigurationReference = 4ABFD8B8F5478EC48A697D7F /* Pods-QNote.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = QNoteToday/QNoteToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -734,7 +796,7 @@
 		};
 		34CF63D522EEE37A00A918CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70264B3A76C53FFF269C082C /* Pods-QNote.debug.xcconfig */;
+			baseConfigurationReference = 0A30F50CFCC7451247A7CC97 /* Pods-QNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QNote/QNote.entitlements;
@@ -756,7 +818,7 @@
 		};
 		34CF63D622EEE37A00A918CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CCA2340B4A1C846482DF808 /* Pods-QNote.release.xcconfig */;
+			baseConfigurationReference = 4ABFD8B8F5478EC48A697D7F /* Pods-QNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QNote/QNote.entitlements;

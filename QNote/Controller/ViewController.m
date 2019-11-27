@@ -27,6 +27,12 @@
     self.notePage.delegate = self;
     self.notePage.dataSource = self;
     [self.notePage setEditing:YES animated:YES];
+    for (NSString *familyName in UIFont.familyNames) {
+        NSLog(@"FontFamily : %@", familyName);
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+            NSLog(@"%@ : %@", familyName, fontName);
+        }
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
